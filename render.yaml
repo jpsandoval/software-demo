@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: mysite
+    name: software-demo
     runtime: ruby
     plan: free
     buildCommand: './bin/render-build.sh'
@@ -9,12 +9,12 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: software_demo
+          name: software-demo
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false # You'll provide this value on Blueprint creation
       - key: WEB_CONCURRENCY
         value: 2 # Recommended default
 databases:
-  - name: software_demo
+  - name: software-demo
     plan: free
