@@ -1,0 +1,45 @@
+  [1m[35m (120.5ms)[0m  [1m[35mCREATE DATABASE "software_development" ENCODING = 'unicode' /*application='Software'*/[0m
+  [1m[35m (114.3ms)[0m  [1m[35mCREATE DATABASE "<nombre proyecto>_development" ENCODING = 'unicode' /*application='Software'*/[0m
+  [1m[35m (113.7ms)[0m  [1m[35mCREATE DATABASE "software_development" ENCODING = 'unicode' /*application='Software'*/[0m
+[dotenv] Set [36mDB_USER[0m and [36mDB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Software'*/[0m
+  [1m[35m (65.4ms)[0m  [1m[35mCREATE DATABASE "software_development" ENCODING = 'unicode' /*application='Software'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='Software'*/[0m
+  [1m[35m (30.3ms)[0m  [1m[35mCREATE DATABASE "software_test" ENCODING = 'unicode' /*application='Software'*/[0m
+[dotenv] Set [36mDB_USER[0m and [36mDB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_USER[0m and [36mDB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-08-04 12:54:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Software'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/juampi/.local/share/mise/installs/ruby/3.4.5/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/juampi/.local/share/mise/installs/ruby/3.4.5/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | GC: 0.0ms)
+Completed 200 OK in 102ms (Views: 5.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+[dotenv] Set [36mDB_USER[0m and [36mDB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_USER[0m and [36mDB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_USER[0m and [36mDB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-08-04 12:55:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Software'*/[0m
+Processing by HomepageController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | GC: 0.0ms)
+Completed 200 OK in 108ms (Views: 13.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-08-04 12:55:46 -0400
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-08-04 12:55:46 -0400
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-08-04 12:55:46 -0400
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-08-04 12:55:46 -0400
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-08-04 12:55:46 -0400
+Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-08-04 12:55:46 -0400
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-08-04 12:55:46 -0400
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-08-04 12:55:46 -0400
