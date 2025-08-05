@@ -53,9 +53,9 @@ Rails.application.configure do
   #config.active_job.queue_adapter = :solid_queue
   #config.solid_queue.connects_to = { database: { writing: :queue } }
 
-  config.active_job.queue_adapter = :async
+  #config.active_job.queue_adapter = :async
   config.cache_store = :memory_store
-  config.action_cable.mount_path = nil
+  #config.action_cable.mount_path = nil
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
