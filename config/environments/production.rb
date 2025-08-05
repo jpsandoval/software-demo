@@ -55,6 +55,7 @@ Rails.application.configure do
 
   #config.active_job.queue_adapter = :async
   config.cache_store = :memory_store
+  config.active_job.queue_adapter = :async
   #config.action_cable.mount_path = nil
 
   # Ignore bad email addresses and do not raise email delivery errors.
