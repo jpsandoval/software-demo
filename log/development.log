@@ -43,3 +43,32 @@ Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-08-04 
 Started GET "/assets/turbo.min-3a2e143f.js" for 127.0.0.1 at 2025-08-04 12:55:46 -0400
 Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-08-04 12:55:46 -0400
 Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-08-04 12:55:46 -0400
+[dotenv] Set [36mDB_USER[0m and [36mDB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5430334387128430185) /*application='Software'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Software'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Software'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-08-05 22:01:02.910639', '2025-08-05 22:01:02.910641') RETURNING "key" /*application='Software'*/[0m
+Migrating to CreateStudents (20250805215952)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='Software'*/[0m
+  [1m[35m (12.8ms)[0m  [1m[35mCREATE TABLE "students" ("id" bigserial primary key, "nickname" character varying, "age" integer, "house" character varying, "grade" float, "hobby" character varying, "favorite_color" character varying, "pet_name" character varying, "pet_kind" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='Software'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250805215952') RETURNING "version" /*application='Software'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT /*application='Software'*/[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5430334387128430185) /*application='Software'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Software'*/[0m
+[dotenv] Set [36mDB_USER[0m and [36mDB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mDB_USER[0m and [36mDB_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/api/students" for ::1 at 2025-08-05 18:03:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Software'*/[0m
+Processing by Api::StudentsController#index as HTML
+  [1m[36mStudent Load (36.1ms)[0m  [1m[34mSELECT "students".* FROM "students" /*action='index',application='Software',controller='students'*/[0m
+  ↳ app/controllers/api/students_controller.rb:5:in 'Api::StudentsController#index'
+Completed 200 OK in 128ms (Views: -14.0ms | ActiveRecord: 51.8ms (1 query, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2025-08-05 18:03:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  

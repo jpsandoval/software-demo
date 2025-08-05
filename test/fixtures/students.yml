@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nickname: MyString
+  age: 1
+  house: MyString
+  grade: 1.5
+  hobby: MyString
+  favorite_color: MyString
+  pet_name: MyString
+  pet_kind: MyString
+
+two:
+  nickname: MyString
+  age: 1
+  house: MyString
+  grade: 1.5
+  hobby: MyString
+  favorite_color: MyString
+  pet_name: MyString
+  pet_kind: MyString
