@@ -75,9 +75,23 @@ client = StudentAPIClient.new(API_BASE)
 students = client.list_students
 
 if students && !students.empty?
-  grades = students.map { |student| student.grade.to_f }.compact
-  average = grades.sum / grades.size
-  puts "Average grade of all students: #{average.round(2)}"
+  total = 0.0
+  count = 0
+
+  for student in students
+    grade = student.grade
+    unless grade.nil?
+      total += grade.to_f
+      count += 1
+    end
+  end
+
+  if count > 0
+    average = total / count
+    puts "Average grade of all students: #{average.round(2)}"
+  else
+    puts "No valid grades found to calculate average."
+  end
 else
   puts "No students found to calculate average grade."
 end
