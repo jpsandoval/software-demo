@@ -1,5 +1,7 @@
 class Api::StudentsController < ApplicationController
-   # GET /api/students
+  skip_before_action :verify_authenticity_token
+
+  # GET /api/students
   def index
     students = Student.all
     render json: students
