@@ -1,6 +1,6 @@
 # app/controllers/tickets_controller.rb
 class TicketsController < ApplicationController
-
+  skip_before_action :verify_authenticity_token
 
   # 1) Create ticket and generate code
   def create

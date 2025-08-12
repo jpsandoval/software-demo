@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   root "homepage#index" 
   
   
+  get   "/hi", to: "hello#sayHi"
+
    # 1) Create ticket
   post   "/tickets", to: "tickets#create"
   # 2) Pay ticket (by code)
