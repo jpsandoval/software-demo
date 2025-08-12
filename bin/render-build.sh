@@ -10,4 +10,6 @@ bin/rails assets:clean
 # If you have a paid instance type, we recommend moving
 # database migrations like this one from the build command
 # to the pre-deploy command:
-bin/rails db:drop db:create db:migrate
+#bin/rails db:drop db:create db:migrate
+
+bin/rails db:migrate

@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  full_name: MyString
+  rut: MyString
+  code: MyString
+  paid: false
+  checked_in: false
+
+two:
+  full_name: MyString
+  rut: MyString
+  code: MyString
+  paid: false
+  checked_in: false
